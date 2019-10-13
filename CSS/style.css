@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-family: Montserrat;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    color: #fff;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 80px;
+    align-items: center;
+}
+
+header .logo {
+    flex: 0 0 20%;
+}
+
+header .logo h2 {
+    text-transform: uppercase;
+}
+
+header .logo span {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 7px;
+}
+
+header nav {
+    flex: 0 0 80%;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    display: block;
+    border-radius: 3px;
+    padding: 10px 22px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: montserrat;
+    font-weight: 500;
+}
+
+header nav ul li a.take_action {
+    border: 2px solid #fff;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+header nav ul li a.take_action:hover {
+    color: #333;
+    background: #fff;
+    transition: .4s;
+}
+
+#Banner-section {
+    background-image: url(../image/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #3333339e;
+    background-blend-mode: multiply;
+    text-align: center;
+    color: #fff;
+    /* position: fixed; */
+}
+
+#Banner-section .container {
+    display: flex;
+    min-height: 45vw;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#Banner-section .container .Banner-content {
+    width: 100%;
+}
+
+#Banner-section .container .Banner-content h5 {
+    font-style: italic;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+
+#Banner-section .container .Banner-content h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.C_button {
+    color: #fff;
+    background: #ec4646;
+    width: 220px;
+    display: block;
+    margin: auto;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+.C_button:hover i {
+    opacity: 1;
+    transition: .5s;
+    margin-left: 0;
+}
+
+.C_button i {
+    opacity: 0;
+    margin-left: -25px;
+    transition: .7s;
+}
+
+#Banner-section .container .Banner-content i:hover {}
+
+#Banner-section .container .Banner-content h5:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #ec4646;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#event-section {
+    margin: 100px 0;
+}
+
+#event-section .container {
+    display: flex;
+}
+
+#event-section .container .event-heading {}
+
+#event-section .event-heading h2 {
+    margin-bottom: 40px;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+#event-section .event-heading h2:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #ec4646;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#event-section .container .single-event {
+    flex: 0 0 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+#event-section .container .single-event img {
+    width: 100%;
+    height: 320px;
+    box-shadow: 7px 7px 1px #33333330;
+    border-radius: 3px;
+}
+
+#event-section .container .single-event h2 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#event-section .container .single-event p {
+    line-height: 22px;
+    font-size: 16px;
+    color: #666;
+    padding-bottom: 15px;
+}
+
+#event-section .container .single-event .Arrow-button {
+    color: #ec4646;
+    background: none;
+}
+
+#event-section .container .single-event .Arrow-button .fas {
+    font-size: 12px;
+}
+
+#explore-world {
+    background-image: url(../Image/explore.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: #33333357;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+#explore-world .container {
+    min-height: 35vw;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#explore-world .container .explore-content {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+#explore-world .container .explore-content h2 {
+    color: #fff;
+    font-family: montserrat;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 50px;
+    line-height: 50px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#explore-world .container .explore-content h2:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #ec4646;
+    bottom: -15px;
+}
+
+#explore-world .container .explore-content p {
+    color: #fff;
+    margin: 20px 0;
+}
+
+#explore-world .container .explore-content .Arrow-button {
+    color: #ec4646;
+    background: none;
+    transition: 1s;
+    text-align: center;
+    margin-left: -43px;
+}
+
+#explore-world .container .explore-content .Arrow-button:hover {
+    margin-left: -40px;
+    transition: 1s;
+}
+
+#explore-world .container .explore-content .Arrow-button .fas {}
+
+#upcoming-tour {
+    margin: 120px 0;
+}
+
+#upcoming-tour .container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#upcoming-tour .container .tour-content {
+    flex: 0 0 35%;
+    padding-right: 10%;
+}
+
+#upcoming-tour .container .tour-content h2 {
+    color: #333;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#upcoming-tour .container .tour-content h2:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background: #ec4646;
+    bottom: -15px;
+}
+
+#upcoming-tour .container .tour-content p {
+    color: #888;
+    margin-bottom: 30px;
+}
+
+#upcoming-tour .container .tour-content .C_button {
+    color: #fff;
+    transition: 1s;
+    text-align: center;
+    margin: 0;
+}
+
+#upcoming-tour .container .tour-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#upcoming-tour .container .tour-gallery .P-gallery {
+    flex: 0 0 50%;
+    margin: 0;
+    padding: 0;
+}
+
+#upcoming-tour .container .tour-gallery .P-gallery img {
+    float: right;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#upcoming-tour .container .tour-content .C_button:hover {
+    transition: 1s;
+}
+
+
+
+#footer {
+    background: #111;
+    color: #bfbfbf;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#footer .container {}
+
+#footer .container p {
+    margin-bottom: 10px;
+    font-family: montserrat;
+    font-size: 14px;
+}
+
+#footer .container span {
+    font-family: montserrat;
+    font-size: 14px;
+}
